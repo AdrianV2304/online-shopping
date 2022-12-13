@@ -1,7 +1,10 @@
 @use "shared/scss" as *;
 
 .layout {
-    &__nav{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    &__nav {
         padding: 1.6rem;
     }
 }
