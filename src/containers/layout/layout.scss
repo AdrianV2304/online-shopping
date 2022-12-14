@@ -1,10 +1,18 @@
 @use "shared/scss" as *;
 
 .layout {
-    height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: $grey;
+  height: fit-content;
+
+  &__nav {
+    padding: 1.6rem;
     display: flex;
-    flex-direction: column;
-    &__nav {
-        padding: 1.6rem;
-    }
+    justify-content: center;
+    background-color: $white;
+  }
+  &__card {
+    margin: 0 auto;
+  }
 }

@@ -4,6 +4,7 @@ const Navigation = () => {
   return (
     <div className="nav">
       <div className="nav__links">
+        <img src="images/logo.webp" alt="logo" />
         <a href=" " target="_blank">
           Home
         </a>

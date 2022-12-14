@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "components/navigation";
+import Footer from "components/footer";
 
 const Layout = (props) => {
   return (
@@ -7,8 +8,10 @@ const Layout = (props) => {
       <div className="layout__nav">
         <Navigation />
       </div>
-      <div>{props.children}</div>
-      <div>footer</div>
+      <div className="layout__card">{props.children}</div>
+      <div className="layout__footer">
+        <Footer />
+      </div>
     </div>
   );
 };
