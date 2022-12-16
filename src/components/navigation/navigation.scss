@@ -1,11 +1,18 @@
 @use "shared/scss" as *;
 
 .nav {
-  width: 50%;
-  height: fit-content;
+  padding: 1.6rem;
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  justify-content: center;
+  background-color: $white;
+
+  &__content {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
   &__links {
     display: flex;

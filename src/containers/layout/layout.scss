@@ -5,14 +5,10 @@
   flex-direction: column;
   background-color: $grey;
   height: fit-content;
+  min-height: 100vh;
+  gap: 10rem;
 
-  &__nav {
-    padding: 1.6rem;
-    display: flex;
-    justify-content: center;
-    background-color: $white;
-  }
-  &__card {
+  .main {
     margin: 0 auto;
   }
 }

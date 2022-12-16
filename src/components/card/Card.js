@@ -2,14 +2,16 @@ import React from "react";
 import Button from "components/button";
 
 const Card = (props) => {
+  console.log(props);
+
   return (
     <div className="card">
       <div className="card__content">
         <img src="images/broccoli.png" alt="broccoli" />
         <a href=" " target="_blank">
-          Happy Baby Organics Teether, 3 Flavor Variety Pack
+          {props.title}
         </a>
-        <span>$30</span>
+        <span>${props.price}</span>
       </div>
       <div className="card__btn">
         <Button />
