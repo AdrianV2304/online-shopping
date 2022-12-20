@@ -3,12 +3,14 @@
 .layout {
   display: flex;
   flex-direction: column;
-  background-color: $grey;
   height: fit-content;
   min-height: 100vh;
   gap: 10rem;
+  width: 100%;
 
-  .main {
-    margin: 0 auto;
+  &.grey {
+  background-color: $grey;
+
   }
 }
+

@@ -6,6 +6,7 @@
     grid-template-rows: auto;
     padding: 2rem;
     gap: 2rem;
+    justify-items: center;
 
     @include tablet {
     grid-template-columns: repeat(2, 1fr);

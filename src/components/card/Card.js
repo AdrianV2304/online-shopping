@@ -2,22 +2,10 @@ import React from "react";
 import Button from "components/button";
 
 const Card = (props) => {
-  // const [data, setData] = useState([
-  //   {
-  //     images: "images/products/broccoli.png",
-  //   },
-  //   {
-  //     images: "images/products/carrots.jpg",
-  //   },
-  // ]);
-
   return (
     <div className="card">
       <div className="card__content">
-        {/* {data.map((images) => {
-          return (data = { images });
-        })} */}
-        <img src="images/products/broccoli.png" alt="broccoli" />
+        <img src={`images/products/${props.image}`} alt="broccoli" />
         <a href=" " target="_blank">
           {props.title}
         </a>

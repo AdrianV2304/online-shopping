@@ -3,9 +3,10 @@ import React, { useEffect, useState } from "react";
 import Layout from "containers/layout";
 import ProductGrid from "containers/productgrid";
 import Card from "components/card";
+
 import { firebaseRequest } from "shared/js";
 
-const App = () => {
+const Homepage = () => {
   const [productList, setProductList] = useState([]);
 
   useEffect(() => {
@@ -15,12 +16,14 @@ const App = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout className="grey">
       <ProductGrid>
-        {productList && productList.map((product) => <Card {...product} />)}
+        {productList?.map((product) => (
+          <Card {...product} />
+        ))}
       </ProductGrid>
     </Layout>
   );
 };
 
-export default App;
+export default Homepage;
