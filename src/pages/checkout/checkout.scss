@@ -18,12 +18,17 @@
         &--row {
             display: flex;
             flex-direction: row;
-            border: .1rem solid $black;
+            border: .1rem solid #e1e1e1;
             padding: 1.5rem .5rem;
             align-items: center;
             justify-content: space-between;
             line-height: 1.6rem;
             font-size: 1.6rem;
+
+            > button {
+                background-color: $white;
+                border: none;
+            }
 
             > img {
                 height: 7rem;
