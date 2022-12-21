@@ -1,4 +1,7 @@
 import React from "react";
+import { BsArrowReturnLeft } from "react-icons/bs";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { RiLoaderLine } from "react-icons/ri";
 
 import Layout from "containers/layout";
 import Cart from "components/cart";
@@ -32,6 +35,23 @@ const Checkout = () => {
           <div className="checkout__table--row">
             <span>Total</span>
             <data>$369.00</data>
+          </div>
+
+          <div className="checkout__table--row links">
+            <a href=" " target="_blank">
+              <BsArrowReturnLeft />
+              <span>Continue shopping</span>
+            </a>
+
+            <a href=" " target="_blank">
+              <RiDeleteBin6Line />
+              <span>Clear shopping cart</span>
+            </a>
+
+            <a href=" " target="_blank">
+              <RiLoaderLine />
+              <span>Update cart</span>
+            </a>
           </div>
         </div>
 

@@ -39,6 +39,26 @@
             &:not(:last-child) {
                 border-bottom: none;
             }
+
+            &.links {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+
+                > a { 
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    color: $black;
+                }
+
+                > span {
+                    padding-left: 1rem;
+                }
+            }
         }
     }
 }
