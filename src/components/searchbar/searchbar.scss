@@ -1,0 +1,31 @@
+@use "shared/scss" as *;
+
+.search {
+
+    &__bar{
+    background-color: $grey;
+    height: fit-content;
+    border-radius: 2.4rem;
+    position: relative;
+
+    > input {
+      background-color: $grey;
+      border: none;
+      margin: 0 1rem;
+      outline: none;
+      height: 4.5rem;
+      border-radius: 2.4rem;
+      font-size: 1.3rem;
+      width: 100%;
+    }
+
+    > img {
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translate(0, -50%);
+      height: 2rem;
+      width: 2rem;
+    }
+}
+  }
